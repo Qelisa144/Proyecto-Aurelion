@@ -1,0 +1,58 @@
+# Verificar esta instalado GIT
+git -v   
+# Establecer Credenciales
+git config --global user.name "jlopez-desarrollador"
+git config --global user.email "alguiendeporahi@gmail.com"
+
+echo "# Proyecto-Aurelion" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+
+#Verificar Archivos monitoreados
+git status
+
+#Agregar todos los archivos 
+git add .
+
+#Primer Commit
+git commit -m "first commit"
+
+#Comprobar commits 
+git log
+
+#Rama
+git branch -M main
+
+#Unir repositorio local con github
+git remote add origin https://github.com/jlopez-desarrollador/Proyecto-Aurelion.git
+
+#Subir
+git push -u origin main
+
+----------------------------------------
+
+#Flujo tipico
+
+#Hacer cambios
+#Comprobar nuevos cambios
+git status
+
+#Agregar todo
+git add .
+git status
+
+#Comentario
+git commit -m "ALGO"
+git log
+
+#Agregar commit a git hub
+git push
+
+
+---------------------------------------
+#Reset al ultimo commit
+git reset --hard
+
+
+
